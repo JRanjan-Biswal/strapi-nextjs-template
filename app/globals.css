@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+  --nav-height-desk: 100px;
+  --nav-height-mob: 80px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {}

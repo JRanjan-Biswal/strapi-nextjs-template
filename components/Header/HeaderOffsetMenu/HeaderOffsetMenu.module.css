@@ -1,0 +1,43 @@
+.offsetMenuContainer {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: calc(100% - var(--nav-height-mob));
+    background-color: slategray;
+    padding: 30px;
+    font-weight: 600;
+    line-height: 150%;
+    transition: .25s ease-in-out;
+}
+
+.leftClose {
+    top: var(--nav-height-mob);
+    bottom: 0;
+    left: 100%;
+}
+
+.leftOpen {
+    left: 0;
+}
+
+.topClose {
+    bottom: 100%;
+}
+
+.topOpen {
+    bottom: 0;
+}
+
+.rightClose {
+    top: var(--nav-height-mob);
+    bottom: 0;
+    right: 100%;
+}
+
+.rightOpen {
+    right: 0;
+}
+
+.offsetMenuContainer .innerNav {
+    padding-bottom: 30px;
+}
