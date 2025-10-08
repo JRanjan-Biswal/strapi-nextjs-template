@@ -17,10 +17,9 @@ async function fetchData(slug?: string) {
 }
 
 export default async function DynamicPage(
-    { searchParams, params, ...rest }: { searchParams: any, params: any, [key: string]: any }
+    { params }: { params: { slug: string } }
 ) {
-    const searchParamsa = await searchParams;
-    const slug = (await params)?.slug;
+    const slug = params?.slug;
 
     const data = await fetchData(slug);
 

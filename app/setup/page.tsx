@@ -80,6 +80,27 @@ export default function Page() {
                     {copySuccess == 3 && <p className="mt-2 text-green-400 absolute right-0 text-xs bottom-0 translate-y-full">Copied!</p>}
                 </div>
             </div>
+
+            <div className="bg-[#ff6b6b] text-white p-6 rounded-lg shadow-md mt-8 border-2 border-[#ff5252]">
+                <h4 className="text-lg mb-4 font-bold text-center">⚠️ IMPORTANT NOTE ⚠️</h4>
+                <p className="text-base font-semibold text-center">
+                    <strong>Once your Strapi is up and running and you have added the BASE_URL in the environment variables of the frontend, 
+                    then remove the redirect logic in the dynamic [[...slug]] pages.</strong>
+                </p>
+                <p className="text-sm mt-3 text-center opacity-90">
+                    This redirect logic is only meant for initial setup and should be removed once everything is properly configured.
+                </p>
+                <div className="mt-4 text-center">
+                    <p className="text-sm mb-2 font-semibold">Reference: Remove this redirect logic from your [[...slug]] page:</p>
+                    <Image 
+                        src="/image123.png" 
+                        alt="Reference image showing redirect logic to remove" 
+                        width={600} 
+                        height={300} 
+                        className="mx-auto" 
+                    />
+                </div>
+            </div>
         </div>
     </div>;
 }
